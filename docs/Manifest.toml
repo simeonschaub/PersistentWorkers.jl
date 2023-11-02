@@ -30,7 +30,6 @@ uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
 
 [[deps.Distributed]]
 deps = ["Random", "Serialization", "Sockets"]
-git-tree-sha1 = "623f2bd6024aec66c7d3846290ee3f54144b1770"
 repo-rev = "sds/check_eof"
 repo-url = "https://github.com/JuliaLang/Distributed.jl/"
 uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
@@ -139,7 +138,7 @@ uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
 version = "2.7.2"
 
 [[deps.PersistentWorkers]]
-deps = ["Distributed"]
+deps = ["Distributed", "Sockets"]
 path = ".."
 uuid = "4e5df493-b1c1-445d-a70f-754e0f07a7c4"
 version = "0.1.0-DEV"

@@ -2,10 +2,11 @@
 
 julia_version = "1.10.0-beta3"
 manifest_format = "2.0"
-project_hash = "c022bcada9e4f08af3ac57432827f57c46de2749"
+project_hash = "c83b2894998ecca085af452c4116bf0f94922cb5"
 
 [[deps.Distributed]]
 deps = ["Random", "Serialization", "Sockets"]
+git-tree-sha1 = "623f2bd6024aec66c7d3846290ee3f54144b1770"
 repo-rev = "sds/check_eof"
 repo-url = "https://github.com/JuliaLang/Distributed.jl/"
 uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
