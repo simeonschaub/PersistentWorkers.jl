@@ -1,0 +1,25 @@
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.10.0-beta3"
+manifest_format = "2.0"
+project_hash = "c022bcada9e4f08af3ac57432827f57c46de2749"
+
+[[deps.Distributed]]
+deps = ["Random", "Serialization", "Sockets"]
+repo-rev = "sds/check_eof"
+repo-url = "https://github.com/JuliaLang/Distributed.jl/"
+uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+
+[[deps.Random]]
+deps = ["SHA"]
+uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[[deps.SHA]]
+uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+version = "0.7.0"
+
+[[deps.Serialization]]
+uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+
+[[deps.Sockets]]
+uuid = "6462fe0b-24de-5631-8697-dd941f90decc"

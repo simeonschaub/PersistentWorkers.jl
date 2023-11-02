@@ -3,5 +3,8 @@ uuid = "4e5df493-b1c1-445d-a70f-754e0f07a7c4"
 authors = ["Simeon David Schaub <simeondavidschaub99@gmail.com> and contributors"]
 version = "0.1.0-DEV"
 
+[deps]
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+
 [compat]
 julia = "1.10"
