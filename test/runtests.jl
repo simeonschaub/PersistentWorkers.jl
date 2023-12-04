@@ -9,8 +9,7 @@ using Distributed
     cookie = randstring(16)
     port = 9127 # TODO: make sure port is available?
     port = rand(9128:9999)
-    #worker = run(`$(Base.julia_cmd()) --project -e "using PersistentWorkers; wait(start_worker_loop($port; cluster_cookie=\"$cookie\"))"`; wait=false)
-    worker = run(`$(Base.julia_exename()) --startup=no --project=. -e "using PersistentWorkers; wait(start_worker_loop($port; cluster_cookie=\"$cookie\"))"`; wait=false)
+    worker = run(`$(Base.julia_cmd()) --startup=no --project -e "using PersistentWorkers; wait(start_worker_loop($port; cluster_cookie=\"$cookie\"))"`; wait=false)
     @show worker
     try
     cluster_cookie(cookie)
