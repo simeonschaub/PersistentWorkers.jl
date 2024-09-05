@@ -8,6 +8,6 @@ Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
 
 [compat]
-Distributed = "1.10"
-Sockets = "1.10"
+Distributed = "0.0, 1.10"
+Sockets = "0.0, 1.10"
 julia = "1.10"

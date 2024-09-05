@@ -56,7 +56,7 @@ function start_worker_loop(host::IPAddr, port::Union{Nothing, Integer}; cluster_
     end
     errormonitor(t)
     @info "Listening on $host:$port, cluster_cookie=$cluster_cookie"
-    return t
+    return t, host, port
 end
 
 function start_worker_loop((; host, port)::InetAddr; cluster_cookie=cluster_cookie())
