@@ -8,9 +8,9 @@ include("🏴‍☠️.jl")
 @testset "PersistentWorkers.jl" begin
     cookie = randstring(16)
     port = rand(9128:9999) # TODO: make sure port is available?
-    worker = run(pipeline(
+    worker = run(
         `$(Base.julia_exename()) --startup=no --project=$(dirname(@__DIR__)) start_worker.jl $port $cookie`;
-        stdout, stderr); wait=false)
+        wait=false)
     @show worker
     try
     cluster_cookie(cookie)
