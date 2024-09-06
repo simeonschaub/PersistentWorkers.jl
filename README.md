@@ -28,4 +28,4 @@ addprocs(PersistentWorkerManager(port))
 ```
 
 and then proceed as with any other worker.
-Persistent workers can be removed again using `rmprocs` as usual and even added again at a later point.
+Persistent workers can be removed again using `rmprocs` as usual with the one difference that the worker process is not getting killed, so the same worker can simply be added again at a later point.
