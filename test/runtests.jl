@@ -14,6 +14,7 @@ include("🏴‍☠️.jl")
     @show worker
     try
     cluster_cookie(cookie)
+    sleep(10)
 
     p = addprocs(PersistentWorkerManager(port))[]
     @test procs() == [1, p]
