@@ -39,8 +39,6 @@ include("🏴‍☠️.jl")
     # this shouldn't error
     @everywhere 1+1
 
-    sleep(10)
-
     # TODO: figure out why this fails when running tests. It works when tested manually in the REPL
     #p = addprocs(PersistentWorkerManager(port))[]
     #@test procs() == [1, p]
